@@ -8,9 +8,9 @@ function Navbar() {
     const [Visible, setVisible] = React.useState(false);
     const {showSearch, setShowSearch,search,setSearch,getCount} = useContext(ShopContext)
   return (
-    <div className='flex items-center justify-between'>
-        <img className='w-36 -ml-2' src={assets.neowearlogo} alt="my log"/>
-        <ul className='hidden sm:flex text-sm text-gray-700 gap-5'>
+    <div className='flex items-center -ml-4 justify-between pt-2'>
+       <Link to={'/'}><img className='w-20 ' src={assets.neowearlogo} alt="my log"/> </Link> 
+        <ul className='hidden sm:flex items-center text-sm text-gray-700 gap-5'>
             <NavLink to='/' className='flex flex-col gap-1'>
             <p>Home</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>

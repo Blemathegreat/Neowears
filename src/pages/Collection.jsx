@@ -108,7 +108,7 @@ useEffect(()=>{
       </div>
       {/* the right side*/}
         <div className='flex-1'>
-        <div className='flex justify-between text-base mb-4 sm:text-xl'>
+        <div className='flex justify-between  text-base mb-4 sm:text-xl flex-col sm:flex-row'>
           <Title text1={"ALL"} text2={"COLLECTIONS"}/>
          <select onChange={(e)=>setSortType(e.target.value)} className='border border-gray-400'>
           <option value={"relevant"}>Sort by:Relevant</option>
